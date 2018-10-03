@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Orientate</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_clothing">Add a clothing item</string>
+    <string name="submit_item">Submit</string>
+</resources>
