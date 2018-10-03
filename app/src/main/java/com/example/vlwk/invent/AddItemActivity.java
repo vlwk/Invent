@@ -10,7 +10,7 @@ import android.widget.AutoCompleteTextView;
 public class AddItemActivity extends AppCompatActivity {
 
     private static final String[] COLOURS = new String[] {
-            "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Purple", "Rainbow rainbow"
+            "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Purple", "Rainbow"
     };
 
     private static final String[] CLOTHING = new String[] {
