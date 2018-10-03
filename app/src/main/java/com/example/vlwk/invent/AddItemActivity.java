@@ -18,6 +18,7 @@ public class AddItemActivity extends AppCompatActivity {
     };
 
     String selected_colour;
+    String thisshitisnotused;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
