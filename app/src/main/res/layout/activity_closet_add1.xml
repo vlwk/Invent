@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="80sp"
         android:textSize="30sp"
-        android:text="What would you like to wear today?"
+        android:text="Add a piece of clothing you own"
         android:gravity="center"
         android:textColor="@color/colorPrimary"/>
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:textSize="15sp"
-        android:text="We'll find clothing that's perfect for you. "
+        android:text="Build up your collection!"
         android:gravity="center"
         android:layout_below="@id/home1" />
 

@@ -1,40 +1,46 @@
 package com.example.vlwk.invent;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.graphics.Bitmap;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class ClosetFragment extends Fragment {
+public class InfoActivity extends AppCompatActivity {
 
-    @Nullable
+
+
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_closet, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_info);
 
-        GridView gridview = (GridView) view.findViewById(R.id.gridview);
-        gridview.setAdapter(new ImageAdapter(getActivity()));
+        Bundle extras = getIntent().getExtras();
+        Bitmap bmp = (Bitmap) extras.getParcelable("imagebitmap");
+
+        ImageView noob = findViewById(R.id.imageView);
+        noob.setImageBitmap(bmp);
+
+        GridView gridview = (GridView) findViewById(R.id.gridview2);
+        gridview.setAdapter(new ImageAdapter(this));
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "" + position,
+                Toast.makeText(InfoActivity.this, "" + position,
                         Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), InfoActivity.class);
+
+                Intent intent = new Intent(getApplicationContext(), AmazonActivity.class);
                 v.buildDrawingCache();
                 Bitmap image= v.getDrawingCache();
 
@@ -42,24 +48,9 @@ public class ClosetFragment extends Fragment {
                 extras.putParcelable("imagebitmap", image);
                 intent.putExtras(extras);
                 startActivity(intent);
-
-            }
-
-        });
-
-        Button button = (Button) view.findViewById(R.id.useless);
-        button.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(getActivity(), ClosetAdd1Activity.class);
-                startActivity(intent);
             }
         });
 
-
-        return view;
     }
 
     public static int getScreenWidth() {
@@ -111,15 +102,6 @@ public class ClosetFragment extends Fragment {
                 R.drawable.sample_2, R.drawable.sample_3,
                 R.drawable.sample_4, R.drawable.sample_5,
                 R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_1,
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_1,
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7
         };
     }
-
 }
