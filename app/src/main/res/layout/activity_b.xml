@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bActivity">
+    tools:context=".bActivity"
+    android:background="@color/colorPrimary">
 
     <TextView
         android:id="@+id/a1"
@@ -14,7 +15,7 @@
         android:layout_marginTop="8dp"
         android:text="We'll give you a few images of clothing taken from online websites such as Amazon and Taobao."
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +31,7 @@
         android:layout_marginTop="8dp"
         android:text="Pick those that you like!"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

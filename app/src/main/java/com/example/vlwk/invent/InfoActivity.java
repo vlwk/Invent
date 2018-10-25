@@ -25,6 +25,8 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Bundle extras = getIntent().getExtras();
         Bitmap bmp = (Bitmap) extras.getParcelable("imagebitmap");
 
@@ -37,8 +39,6 @@ public class InfoActivity extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(InfoActivity.this, "" + position,
-                        Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(getApplicationContext(), AmazonActivity.class);
                 v.buildDrawingCache();
@@ -99,9 +99,10 @@ public class InfoActivity extends AppCompatActivity {
 
         // references to our images
         private Integer[] mThumbIds = {
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7,
+                R.drawable.lower2, R.drawable.lower3,
+                R.drawable.lower5, R.drawable.lower8,
+                R.drawable.lower11, R.drawable.lower4,
+
         };
     }
 }

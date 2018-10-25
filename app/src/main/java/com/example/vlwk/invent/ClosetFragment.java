@@ -32,8 +32,6 @@ public class ClosetFragment extends Fragment {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "" + position,
-                        Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(), InfoActivity.class);
                 v.buildDrawingCache();
                 Bitmap image= v.getDrawingCache();
@@ -108,17 +106,17 @@ public class ClosetFragment extends Fragment {
 
         // references to our images
         private Integer[] mThumbIds = {
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_1,
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_1,
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7
+                R.drawable.lower3, R.drawable.upper13,
+                R.drawable.lower14, R.drawable.lower4,
+                R.drawable.upper11, R.drawable.lower9,
+                R.drawable.upper1, R.drawable.upper4,
+                R.drawable.lower23, R.drawable.lower18,
+                R.drawable.lower19, R.drawable.upper24,
+                R.drawable.upper17, R.drawable.upper19,
+                R.drawable.lower21, R.drawable.upper16,
+                R.drawable.upper7, R.drawable.upper2,
+                R.drawable.upper15, R.drawable.lower5,
+                R.drawable.lower25, R.drawable.upper10
         };
     }
 

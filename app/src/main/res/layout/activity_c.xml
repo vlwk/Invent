@@ -8,13 +8,13 @@
 
     <TextView
         android:id="@+id/ctitle"
-        android:textColor="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:textSize="20sp"
-        android:text="Pick the ones you like"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:text="Pick the ones you like!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
 
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gridviewc"
@@ -31,11 +31,14 @@
 
     <Button
         android:id="@+id/buttoncc"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
-        android:text="Next" />
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:text="Welcome"
+        android:textColor="@android:color/white"/>
 
 </RelativeLayout>

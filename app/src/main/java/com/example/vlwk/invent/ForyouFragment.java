@@ -30,10 +30,8 @@ public class ForyouFragment extends Fragment {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "" + position,
-                        Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getActivity(), AmazonActivity.class);
+                Intent intent = new Intent(getActivity(), Amazon2Activity.class);
                 v.buildDrawingCache();
                 Bitmap image= v.getDrawingCache();
 
@@ -93,11 +91,16 @@ public class ForyouFragment extends Fragment {
 
         // references to our images
         private Integer[] mThumbIds = {
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_1,
-                R.drawable.sample_2
+                R.drawable.upper3, R.drawable.lower13,
+                R.drawable.upper14, R.drawable.upper4,
+                R.drawable.lower11, R.drawable.upper9,
+                R.drawable.lower1, R.drawable.lower4,
+                R.drawable.upper23, R.drawable.upper18,
+                R.drawable.upper19, R.drawable.lower24,
+                R.drawable.upper21, R.drawable.lower16,
+                R.drawable.lower7, R.drawable.lower2,
+                R.drawable.lower15, R.drawable.upper5,
+                R.drawable.upper25, R.drawable.lower10
         };
     }
 }

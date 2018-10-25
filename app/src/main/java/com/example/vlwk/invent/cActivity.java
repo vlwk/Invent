@@ -92,11 +92,11 @@ public class cActivity extends AppCompatActivity {
 
         // references to our images
         private Integer[] mThumbIds = {
-                R.drawable.sample_2, R.drawable.sample_3,
-                R.drawable.sample_4, R.drawable.sample_5,
-                R.drawable.sample_6, R.drawable.sample_7,
-                R.drawable.sample_0, R.drawable.sample_1,
-                R.drawable.sample_2
+                R.drawable.lower1, R.drawable.lower4,
+                R.drawable.upper10, R.drawable.lower17,
+                R.drawable.lower21, R.drawable.upper14,
+                R.drawable.upper15, R.drawable.upper2,
+                R.drawable.upper22
         };
     }
 }

@@ -30,19 +30,28 @@
         android:id="@+id/autoCompleteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:hint="Pick a colour"
-        android:completionThreshold="1"/>
+        android:layout_centerHorizontal="true"
+        android:completionThreshold="1"
+        android:layout_below="@id/home2"
+        android:hint="Pick a colour" />
 
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="162dp"
-        android:hint="Pick an item"
-        android:completionThreshold="1" />
+        android:layout_below="@id/autoCompleteTextView"
+        android:completionThreshold="1"
+        android:hint="Pick an item" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView3"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView2"
+        android:layout_centerHorizontal="true"
+        android:completionThreshold="1"
+        android:hint="Choose an occasion" />
 
     <Button
         android:id="@+id/button"
@@ -50,8 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:text="Submit"/>
+        android:layout_marginBottom="38dp"
+        android:text="Submit" />
 
 
 </RelativeLayout>
